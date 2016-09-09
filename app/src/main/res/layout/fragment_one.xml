@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefrechBeaconPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA0A9AC"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.ProfilFragment">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA0A9AC"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.BeaconFragment">
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maxwel_s"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recherche Bluetooth.."
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="italic" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Je pars !"
+            android:id="@+id/imLeavingButton"
+            android:textSize="15dp"
+            android:enabled="false"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/imHereButton"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Je suis là !"
+            android:id="@+id/imHereButton"
+            android:textSize="15dp"
+            android:enabled="false"
+            android:textStyle="bold|italic"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/recherche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="Recherche en cours..."
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="55dp"
+            android:layout_above="@+id/imLeavingButton"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_big_beacon"
+            android:layout_above="@+id/recherche"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp" />
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/CheckOut"
+            android:background="@drawable/ic_check"
+            android:visibility="invisible"
+            android:layout_above="@+id/imLeavingButton"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginLeft="-20dp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/CheckIn"
+            android:background="@drawable/ic_check"
+            android:visibility="invisible"
+            android:layout_above="@+id/imHereButton"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginRight="-20dp" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/CheckInProgressBar"
+            android:indeterminate="false"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/CheckIn"
+            android:layout_alignStart="@+id/CheckIn"
+            android:layout_marginRight="-20dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/CheckOutProgressBar"
+            android:visibility="invisible"
+            android:indeterminate="false"
+            android:layout_alignTop="@+id/CheckOut"
+            android:layout_alignStart="@+id/CheckOut" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

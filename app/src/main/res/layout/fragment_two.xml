@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefrech"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA0A9AC"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.ProfilFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_alignStart="@+id/FullName"
+            android:layout_alignEnd="@+id/FullName" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes notes"
+            android:textColor="@color/primary"
+            android:id="@+id/myStatsButton"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon planning"
+            android:textColor="@color/primary"
+            android:id="@+id/myPlanningButton"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:layout_above="@+id/myStatsButton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes tickets"
+            android:textColor="@color/primary"
+            android:id="@+id/myTicketButton"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_alignStart="@+id/myStatsButton"
+            android:layout_alignEnd="@+id/Telephone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="FullName"
+            android:id="@+id/FullName"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/Login"
+            android:layout_alignEnd="@+id/Promotion"
+            android:layout_toEndOf="@+id/imageView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="telephone"
+            android:id="@+id/Telephone"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_below="@+id/FullName"
+            android:layout_marginTop="25dp"
+            android:layout_alignEnd="@+id/FullName"
+            android:layout_alignStart="@+id/FullName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mail"
+            android:id="@+id/Mail"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/myPlanningButton"
+            android:layout_alignStart="@+id/myPlanningButton"
+            android:layout_alignEnd="@+id/myPlanningButton"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView4"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Status"
+            android:id="@+id/Status"
+            android:textAlignment="center"
+            android:layout_above="@+id/myPlanningButton"
+            android:layout_alignStart="@+id/Mail"
+            android:layout_alignEnd="@+id/Promotion"
+            android:layout_marginBottom="55dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Promotion"
+            android:id="@+id/Promotion"
+            android:textAlignment="center"
+            android:layout_above="@+id/Status"
+            android:layout_alignStart="@+id/myPlanningButton"
+            android:layout_alignEnd="@+id/myPlanningButton"
+            android:layout_marginBottom="15dp"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

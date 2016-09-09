@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="BackgroundLaunchScreen">#FFFFFF</color>
+
+
+    <color name="primary">#ffffff</color>
+    <color name="primary_dark">#3a848e</color>
+    <color name="primary_darker">#50a6b2</color>
+    <color name="kiwi_vert_tres_clair">#F8EFC4</color>
+    <color name="kiwi_marron_fonce">#392D1C</color>
+    <color name="kiwi_vert_clair">#A4CD4F</color>
+    <color name="kiwi_vert_fonce2">#6A931D</color>
+    <color name="kiwi_vert_fonce1">#7E9F41</color>
+    <color name="accent">#ff8131</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="orange">#ff8131</color>
+</resources>
